@@ -27,6 +27,7 @@ jobs:
         echo "
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
+import sys
 
 # Autenticación con las credenciales de Spotify
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id='${{ secrets.SPOTIFY_CLIENT_ID }}', client_secret='${{ secrets.SPOTIFY_CLIENT_SECRET }}'))
@@ -39,28 +40,30 @@ if track is not None and track['item'] is not None:
     track_url = track['item']['external_urls']['spotify']
     track_image = track['item']['album']['images'][0]['url']
 
-    # Imprimir resultados para usarlos en los pasos siguientes
-    print(f"Track: {track_name}")
-    print(f"URL: {track_url}")
-    print(f"Image URL: {track_image}")
-
-    # Devolver los resultados
+    # Devolver los resultados como salida
     print(f'::set-output name=track_name::{track_name}')
     print(f'::set-output name=track_url::{track_url}')
     print(f'::set-output name=track_image::{track_image}')
 else:
     print("No track is currently playing.")
+    sys.exit(1)  # Salir con error si no se está reproduciendo ninguna canción
 " > get_spotify_track.py
 
     - name: Run Python script to get track data
+      id: track_data
       run: |
         python get_spotify_track.py
 
     - name: Update README with current track
       run: |
+        # Usamos la salida del paso anterior
+        track_name="${{ steps.track_data.outputs.track_name }}"
+        track_url="${{ steps.track_data.outputs.track_url }}"
+        track_image="${{ steps.track_data.outputs.track_image }}"
+
         # Reemplazar la URL de la imagen y la URL de la canción en el README
-        sed -i "s|https://i.scdn.co/image/.*|${{ steps.track.outputs.track_image }}|g" README.md
-        sed -i "s|https://open.spotify.com/track/.*|${{ steps.track.outputs.track_url }}|g" README.md
+        sed -i "s|https://i.scdn.co/image/.*|$track_image|g" README.md
+        sed -i "s|https://open.spotify.com/track/.*|$track_url|g" README.md
 
     - name: Commit and push changes
       run: |

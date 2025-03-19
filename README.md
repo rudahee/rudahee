@@ -109,7 +109,10 @@
 <br/>  
 
 ## My music
-![Spotify Profile with Cover](https://spotify-github-profile.kittinanx.com/api/view.svg?uid=1192986579&cover_image=true&theme=natemoo-re&show_offline=true&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=true)
+<div align="center">
+  ![Spotify Profile with Cover](https://spotify-github-profile.kittinanx.com/api/view.svg?uid=1192986579&cover_image=true&theme=natemoo-re&show_offline=true&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=true)
+</div>
+
 
 
 

@@ -3,8 +3,10 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import json
 
 # Autenticación con las credenciales de Spotify
-sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id="${{ secrets.SPOTIFY_CLIENT_ID }}", client_secret="${{ secrets.SPOTIFY_CLIENT_SECRET }}"))
-
+sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
+    client_id=os.getenv("SPOTIFY_CLIENT_ID"),
+    client_secret=os.getenv("SPOTIFY_CLIENT_SECRET")
+))
 # Obtener la canción que estás escuchando
 track = sp.current_playback()
 

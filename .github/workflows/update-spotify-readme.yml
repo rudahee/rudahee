@@ -20,14 +20,14 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install spotipy
+        pip install spotipy jq
 
     - name: Create Python script to get current track
       run: |
         echo "
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
-import sys
+import json
 
 # Autenticación con las credenciales de Spotify
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id='${{ secrets.SPOTIFY_CLIENT_ID }}', client_secret='${{ secrets.SPOTIFY_CLIENT_SECRET }}'))
@@ -40,30 +40,34 @@ if track is not None and track['item'] is not None:
     track_url = track['item']['external_urls']['spotify']
     track_image = track['item']['album']['images'][0]['url']
 
-    # Devolver los resultados como salida
-    print(f'::set-output name=track_name::{track_name}')
-    print(f'::set-output name=track_url::{track_url}')
-    print(f'::set-output name=track_image::{track_image}')
+    # Guardar los resultados en un archivo JSON
+    track_data = {
+        "track_name": track_name,
+        "track_url": track_url,
+        "track_image": track_image
+    }
+
+    with open('track_data.json', 'w') as f:
+        json.dump(track_data, f)
+
 else:
-    print("No track is currently playing.")
-    sys.exit(1)  # Salir con error si no se está reproduciendo ninguna canción
+    print('No track is currently playing.')
 " > get_spotify_track.py
 
     - name: Run Python script to get track data
-      id: track_data
       run: |
         python get_spotify_track.py
 
-    - name: Update README with current track
+    - name: Read track data from JSON and update README
       run: |
-        # Usamos la salida del paso anterior
-        track_name="${{ steps.track_data.outputs.track_name }}"
-        track_url="${{ steps.track_data.outputs.track_url }}"
-        track_image="${{ steps.track_data.outputs.track_image }}"
+        # Leer los datos del archivo JSON generado por el script
+        TRACK_NAME=$(jq -r '.track_name' track_data.json)
+        TRACK_URL=$(jq -r '.track_url' track_data.json)
+        TRACK_IMAGE=$(jq -r '.track_image' track_data.json)
 
-        # Reemplazar la URL de la imagen y la URL de la canción en el README
-        sed -i "s|https://i.scdn.co/image/.*|$track_image|g" README.md
-        sed -i "s|https://open.spotify.com/track/.*|$track_url|g" README.md
+        # Reemplazar las URLs en el README
+        sed -i "s|https://i.scdn.co/image/.*|$TRACK_IMAGE|g" README.md
+        sed -i "s|https://open.spotify.com/track/.*|$TRACK_URL|g" README.md
 
     - name: Commit and push changes
       run: |

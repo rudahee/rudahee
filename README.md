@@ -110,8 +110,7 @@
 
 ## My music
 
-[![Spotify](https://i.scdn.co/image/ab67616d0000b273e7b5b2184c6f9d65e1a385f9)](https://open.spotify.com/track/tu_track_id)
-
+[[https://spotify-github-profile.kittinanx.com/api/view.svg?uid=1192986579&redirect=true][https://spotify-github-profile.kittinanx.com/api/view.svg?uid=1192986579&cover_image=true&theme=natemoo-re&show_offline=true&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=true)]]
 
 
 ## Github Stats  

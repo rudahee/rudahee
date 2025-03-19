@@ -1,6 +1,7 @@
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import json
+import os
 
 # Autenticación con las credenciales de Spotify
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(

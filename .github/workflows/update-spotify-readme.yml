@@ -22,33 +22,39 @@ jobs:
       run: |
         pip install spotipy
 
-    - name: Get current track from Spotify
-      id: track
+    - name: Create Python script to get current track
       run: |
-        import spotipy
-        from spotipy.oauth2 import SpotifyClientCredentials
+        echo "
+import spotipy
+from spotipy.oauth2 import SpotifyClientCredentials
 
-        # Autenticación con las credenciales de Spotify
-        sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id="${{ secrets.SPOTIFY_CLIENT_ID }}", client_secret="${{ secrets.SPOTIFY_CLIENT_SECRET }}"))
+# Autenticación con las credenciales de Spotify
+sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id='${{ secrets.SPOTIFY_CLIENT_ID }}', client_secret='${{ secrets.SPOTIFY_CLIENT_SECRET }}'))
 
-        # Obtener la canción que estás escuchando
-        track = sp.current_playback()
+# Obtener la canción que estás escuchando
+track = sp.current_playback()
 
-        if track is not None and track['item'] is not None:
-            track_name = track['item']['name']
-            track_url = track['item']['external_urls']['spotify']
-            track_image = track['item']['album']['images'][0]['url']
+if track is not None and track['item'] is not None:
+    track_name = track['item']['name']
+    track_url = track['item']['external_urls']['spotify']
+    track_image = track['item']['album']['images'][0]['url']
 
-            print(f"Track: {track_name}")
-            print(f"URL: {track_url}")
-            print(f"Image URL: {track_image}")
+    # Imprimir resultados para usarlos en los pasos siguientes
+    print(f"Track: {track_name}")
+    print(f"URL: {track_url}")
+    print(f"Image URL: {track_image}")
 
-            # Establecer las salidas para el siguiente paso
-            print(f"::set-output name=track_name::{track_name}")
-            print(f"::set-output name=track_url::{track_url}")
-            print(f"::set-output name=track_image::{track_image}")
-        else:
-            print("No track is currently playing.")
+    # Devolver los resultados
+    print(f'::set-output name=track_name::{track_name}')
+    print(f'::set-output name=track_url::{track_url}')
+    print(f'::set-output name=track_image::{track_image}')
+else:
+    print("No track is currently playing.")
+" > get_spotify_track.py
+
+    - name: Run Python script to get track data
+      run: |
+        python get_spotify_track.py
 
     - name: Update README with current track
       run: |

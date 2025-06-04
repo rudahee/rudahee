@@ -1,8 +1,6 @@
-# ¡Hola! 👋 Soy Rudahee
-
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Java%20Backend%20Developer&fontSize=40&fontAlignY=35&desc=Building%20robust%20systems%20and%20mentoring%20developers&descAlignY=55&fontColor=fff)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:e3c45c,100:bd7514&height=200&section=header&text=RuDaHee&fontSize=50&fontAlignY=30&desc=Java%20Backend%20Developer&descAlignY=55&fontColor=fff)
 
 </div>
 

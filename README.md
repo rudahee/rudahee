@@ -141,9 +141,9 @@ public class Rudahee extends Developer {
 
 <div align="center">
 
-💭 *"Code is poetry written in logic"*
+💭 *"Great code is written by great teams, not great individuals"*
 
-**Open to collaboration • Mentoring • Full-time opportunities**
+**Open to collaboration • Open to teaching • Always learning**
 
 ![Visitor Count](https://profile-counter.glitch.me/rudahee/count.svg)
 

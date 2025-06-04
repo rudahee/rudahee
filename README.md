@@ -112,9 +112,8 @@ public class Rudahee extends Developer {
 - 🔍 Book and author information lookup
 - 🎨 Clean, inclusive, intuitive user interface
 
----
 
-## 🎯 What I'm Passionate About
+### 🎯 What I'm Passionate About
 
 - 🔧 **Clean Architecture**: Building maintainable and scalable systems
 - 🌍 **Open Source**: Contributing to the community and sharing knowledge
@@ -122,9 +121,9 @@ public class Rudahee extends Developer {
 - 📚 **Continuous Learning**: Always exploring new technologies and patterns
 - 🎮 **Creative Projects**: Combining programming with hobbies like gaming, botting, etc.
 
----
 
-## 📫 Let's Connect!
+
+### 📫 Let's Connect!
 
 <div align="center">
 
@@ -141,7 +140,7 @@ public class Rudahee extends Developer {
 
 <div align="center">
 
-💭 *"Great code is written by great teams, not great individuals"*
+**💭 *"Great code is written by great teams, not great individuals"***
 
 **Open to collaboration • Open to teaching • Always learning**
 

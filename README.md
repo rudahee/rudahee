@@ -145,6 +145,7 @@ public class Rudahee extends Developer {
 **Open to collaboration • Open to teaching • Always learning**
 
 ![Visitor Count](https://profile-counter.glitch.me/rudahee/count.svg)
+<br>
 since June 2025
 </div>
 

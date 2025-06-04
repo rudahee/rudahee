@@ -4,20 +4,18 @@
 
 </div>
 
-## 🚀 About Me
-
 ```java
 public class Rudahee extends Developer {
-    private String name = "Rudahee";
+    private String name = "Rubén D.";
     private String role = "Java Backend Developer";
     private String location = "Sevilla, España";
-    private String currentJob = "Capgemini - DGT Project";
+    private String currentJob = null;
     private String passion = "Clean Code & Open Source";
     
     public String[] getSpecialties() {
         return new String[]{
-            "Spring Framework", "Microservices", "REST APIs",
-            "Middleware Development", "Database Design",
+            "Java", "Spring Framework", "Microservices",
+            "REST APIs", "Middleware Development",
             "Mentoring Junior Devs ❤️"
         };
     }
@@ -25,13 +23,13 @@ public class Rudahee extends Developer {
 ```
 
 ### 🔭 Currently Working On
-- **Capgemini DGT Project** - Building enterprise solutions with Java & Spring
-- **[Metallics Arts](https://github.com/SteelCodeTeam/Metallics-Arts)** - Minecraft mod with **350K+ Twitter views** and **2.7K+ downloads**!
+- **Co-founder & Lead Developer** at **[SteelCodeTeam](https://github.com/SteelCodeTeam)**- An open source developer collective with **350K+ Twitter impressions** && 🎯 **2.7K+ project downloads**
 - Supporting **FLOSS projects** at CNT Union
 
 ### 🌱 Always Learning
+- Kafka
+- ElasticStack
 - Advanced Spring Boot patterns
-- Cloud-native architectures
 - Performance optimization techniques
 
 ### ❓ Ask Me About
@@ -87,6 +85,8 @@ public class Rudahee extends Developer {
 
 <div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=rudahee&show_icons=true&count_private=true&hide_border=true&theme=onedark"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=steelcodeteam&show_icons=true&count_private=true&hide_border=true&theme=onedark"/>
+
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rudahee&layout=compact&hide_border=true&theme=onedark"/>
 </div>
 

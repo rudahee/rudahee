@@ -44,9 +44,8 @@ public class Rudahee extends Developer {
 - 🤝 Love mentoring new developers - **DM me anytime!**
 - 📚 Fantasy book enthusiast (hence the Mistborn mod!)
 
----
 
-## 🛠️ Tech Stack
+### 🛠️ Tech Stack
 
 <div align="center">
 
@@ -79,9 +78,8 @@ public class Rudahee extends Developer {
 
 </div>
 
----
 
-## 📊 GitHub Stats
+### 📊 GitHub Stats
 
 <div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=rudahee&show_icons=true&count_private=true&hide_border=true&theme=onedark"/>
@@ -91,22 +89,22 @@ public class Rudahee extends Developer {
 </div>
 ---
 
-## 🏆 Featured Projects
+### 🏆 Featured Projects
 
-### 🎮 [Metallics Arts](https://github.com/SteelCodeTeam/Metallics-Arts)
+#### 🎮 [Metallics Arts](https://github.com/SteelCodeTeam/Metallics-Arts)
 **Minecraft Mod | Java + Forge API**
 - ⭐ **350,000+ Twitter views**
 - 📥 **6700+ CurseForge downloads**
 - 🌟 Based on Brandon Sanderson's Mistborn series
 - 🚀 Active development with regular updates
 
-### 🛠️ [Spring Archetype with Generics](https://github.com/rudahee/Archetype-SpringProjectWithGenerics)
+#### 🛠️ [Spring Archetype with Generics](https://github.com/rudahee/Archetype-SpringProjectWithGenerics)
 **Spring Boot Template | Java**
 - 🏗️ Generic-based structure for rapid API development
 - 📦 Ready-to-use Spring Boot archetype
 - ⚡ Accelerates project bootstrapping
 
-### 📚 MyBookList
+#### 📚 MyBookList
 **Full-Stack Web App | Spring Boot + Angular**
 - 📖 Personal library management system
 - 🔍 Book and author information lookup

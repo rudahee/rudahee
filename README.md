@@ -87,25 +87,24 @@ public class Rudahee extends Developer {
 
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rudahee&layout=compact&hide_border=true&theme=onedark"/>
 </div>
----
 
 ### 🏆 Featured Projects
 
 #### 🎮 [Metallics Arts](https://github.com/SteelCodeTeam/Metallics-Arts)
-**Minecraft Mod | Java + Forge API**
+*Minecraft Mod | Java + Forge API*
 - ⭐ **350,000+ Twitter views**
 - 📥 **6700+ CurseForge downloads**
 - 🌟 Based on Brandon Sanderson's Mistborn series
 - 🚀 Active development with regular updates
 
 #### 🛠️ [Spring Archetype with Generics](https://github.com/rudahee/Archetype-SpringProjectWithGenerics)
-**Spring Boot Template | Java**
+*Spring Boot Template | Java*
 - 🏗️ Generic-based structure for rapid API development
 - 📦 Ready-to-use Spring Boot archetype
 - ⚡ Accelerates project bootstrapping
 
 #### 📚 MyBookList
-**Full-Stack Web App | Spring Boot + Angular**
+*Full-Stack Web App | Spring Boot + Angular*
 - 📖 Personal library management system
 - 🔍 Book and author information lookup
 - 🎨 Clean, inclusive, intuitive user interface

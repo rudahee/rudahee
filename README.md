@@ -23,7 +23,7 @@ public class Rudahee extends Developer {
 ```
 
 ### 🔭 Currently Working On
-- **Co-founder & Lead Developer** at **[SteelCodeTeam](https://github.com/SteelCodeTeam)**- An open source developer collective with **350K+ Twitter impressions** && 🎯 **2.7K+ project downloads**
+- **Co-founder & Lead Developer** at **[SteelCodeTeam](https://github.com/SteelCodeTeam)**- An open source developer collective with **350K+ Twitter impressions** && 🎯 **30K+ project downloads**
 - Supporting **FLOSS projects** at CNT Union
 
 ### 🌱 Always Learning
@@ -89,11 +89,6 @@ public class Rudahee extends Developer {
 
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rudahee&layout=compact&hide_border=true&theme=onedark"/>
 </div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rudahee&theme=onedark&hide_border=true" />
-</div>
-
 ---
 
 ## 🏆 Featured Projects
@@ -101,7 +96,7 @@ public class Rudahee extends Developer {
 ### 🎮 [Metallics Arts](https://github.com/SteelCodeTeam/Metallics-Arts)
 **Minecraft Mod | Java + Forge API**
 - ⭐ **350,000+ Twitter views**
-- 📥 **2,700+ CurseForge downloads**
+- 📥 **6700+ CurseForge downloads**
 - 🌟 Based on Brandon Sanderson's Mistborn series
 - 🚀 Active development with regular updates
 
@@ -115,28 +110,7 @@ public class Rudahee extends Developer {
 **Full-Stack Web App | Spring Boot + Angular**
 - 📖 Personal library management system
 - 🔍 Book and author information lookup
-- 🎨 Clean, intuitive user interface
-
----
-
-## 💼 Professional Experience
-
-```mermaid
-timeline
-    title Career Journey
-    2024-2025 : Capgemini
-              : Software Developer
-              : Java + Spring + Nuxeo
-    2023-2024 : Eviden
-              : Java Developer
-              : Middleware + Microservices
-    2022-2023 : Atos
-              : Middleware Developer
-              : Enterprise Integration
-    2021      : Atos (Internship)
-              : Junior Developer
-              : Tibco + Java
-```
+- 🎨 Clean, inclusive, intuitive user interface
 
 ---
 
@@ -146,7 +120,7 @@ timeline
 - 🌍 **Open Source**: Contributing to the community and sharing knowledge
 - 👨‍🏫 **Mentoring**: Helping junior developers grow in their careers
 - 📚 **Continuous Learning**: Always exploring new technologies and patterns
-- 🎮 **Creative Projects**: Combining programming with hobbies like gaming
+- 🎮 **Creative Projects**: Combining programming with hobbies like gaming, botting, etc.
 
 ---
 
@@ -155,8 +129,8 @@ timeline
 <div align="center">
 
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/RuDaHee)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/tu-perfil)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tu-email@example.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jrdh)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=hotmail&logoColor=white)](mailto:jdazher@hotmail.com)
 
 </div>
 

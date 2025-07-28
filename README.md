@@ -141,13 +141,6 @@ public class Rudahee extends Developer {
 
 **Open to collaboration • Open to teaching • Always learning**
 
-![Visitor Count](https://profile-counter.glitch.me/rudahee/count.svg)
-<br>
-since June 2025
-</div>
-
-
-
 <div align="center">
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer)
